@@ -27,7 +27,7 @@
         <nav>
             <button type="button">
 
-                <img src="assents/icone/menu.png" alt="Menu">
+                <img src="assents/icone/menu.svg" alt="Menu">
             </button>
             <ul>
                 <li><a href="#Home">Sobre</a></li>
@@ -49,8 +49,8 @@
             <img src="assents/foto/pin.jpg" alt="Foto da Gabrielly">
         </section>
 
-        <section id="projetos">
-            <h2>Projetos</h2>
+        <section id="hero">
+            <h2 id="prjetos">Projetos</h2>
             <p>Acompanhe meus primeiros projetos e a qualidade de cada um deles.</p>
             <p>Descrição do projeto 2.</p>
 
@@ -86,17 +86,23 @@
         <section>
             <h2>Contato</h2>
             <form>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" placeholder="João" required>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="@gmail.com" required>
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="João" required>
+                </div>
+
+                <div><label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="@gmail.com" required>
+                </div>
                 <!-- o for precisa do id do input igual para eles se conectem -->
-                <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
-
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" required placeholder="Dê um oi!"></textarea>
+                <div><label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+                </div>
+                <div>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" required placeholder="Dê um oi!"></textarea>
+                </div>
 
                 <button type="submit">Enviar</button>
             </form>
@@ -106,11 +112,17 @@
     <footer>
         <nav>
             <ul>
-                <li><a href="https://www.linkedin.com/in/gabriellyaraujo/" target="_blank"> <img src="assents/icone/LinkedIn.svg" alt="LinkedIn"></a></li>
-                <li><a href="https://www.instagram.com/gabriellyaraujo/" target="_blank"> <img src="assents/icone/Instagram.svg" alt="Instagram"></a></li>
-                <li><a href="https://www.facebook.com/gabriellyaraujo" target="_blank"> <img src="assents/icone/Facebook.svg" alt="Facebook"></a></li>
+                <li><a href="https://www.linkedin.com/in/gabriellyaraujo/" target="_blank"> <img
+                            src="assents/icone/LinkedIn.svg" alt="LinkedIn"></a></li>
+                <li><a href="https://www.instagram.com/gabriellyaraujo/" target="_blank"> <img
+                            src="assents/icone/Instagram.svg" alt="Instagram"></a></li>
+                <li><a href="https://www.facebook.com/gabriellyaraujo" target="_blank"> <img
+                            src="assents/icone/Facebook.svg" alt="Facebook"></a></li>
             </ul>
         </nav>
+
+        <p> &copy; 2023 Gabrielly Araújo. Todos os direitos reservados.</p>
+
     </footer>
 
 </body>
