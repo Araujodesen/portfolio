@@ -13,18 +13,46 @@ body {
 
 }
 
+html,body{
+      height: 100%;
+}
+
+.container{
+      width: 100%;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+}
+
 a {
       color: #0d0d0e;
 }
 
+a, button{
+      transition: all 300ms;
+}
+
 header {
       background-color: rgb(153, 179, 38);
-      padding: 17px; /*espaçamento lateral*/
+      padding: 17px; /*espaçamento lateral*/     
+}
+
+.header{
       display: flex;
       justify-content: space-between;
       align-items: center;
 }
 
+header ul a:hover{
+      color: yellowgreen;
+      text-decoration:yellowgreen;
+      background-color: #413f01;
+}
+
+header ul a{
+      padding: 8px 16px;
+      border-radius: 4px;
+}
 header ul{
       display: none;
 }
@@ -40,8 +68,7 @@ header button{
 }
 
 main{
-      padding left: 25px;
-      padding right: 25px;/*primeiro parte de cima e segundo numero parte lateral8, left e right*/
+      padding: 25px 25px;/*primeiro parte de cima e segundo numero parte lateral8, left e right*/
       margin-top: 16px;
       margin-bottom: 16px;
 
@@ -62,7 +89,7 @@ section p{
 
 
 #hero img{
-      display: auto;
+      max-width: 100%;
 }
 
 #projetos p{
@@ -92,6 +119,12 @@ article p{
       margin-bottom: 24px;
 }
 
+article a:hover{
+      color: #413f01;
+      color: #e4e2b9;
+}
+
+
 article a{
       background-color: #0a0a0a;
       border-radius: 24px;
@@ -118,9 +151,9 @@ section form{
       gap: 16px;
 }
 
-div {
-      display:flex
-      flex-direction:column
+form div {
+      display:flex;
+      flex-direction:column;
       gap: 8px;
 
 }
@@ -150,11 +183,25 @@ button{
       font-size: 14px;
       color: #0a0a0a;
       font-weight: 600;
+      cursor: pointer;
+}
+
+article a:hover{
+      background-color: #738f4f;
+}
+
+button:hover{
+      background-color: #044b33;
 }
 
 footer{
     background-color: #413f01;
      padding: 20px; 
+}
+
+footer img{
+      width: 40px;
+      height: 40px;
 }
 
 
@@ -171,7 +218,54 @@ footer p{
       margin-top: 8px;
 }
 
+@media(min-width: 768px){
+      header button{
+            display: none;
+      }
 
+      header ul{
+            display: flex;
+            gap: 16px;
+      }
+      
+      #hero{
+            display: flex;
+            align-items: center;
+            gap: 24px;
+      }
+
+      
+
+      h2{
+            font-size: 32px;
+      }
+
+      h2 spam{
+            color: #080801;
+      }
+
+      #projetos ul{
+            gap:16px;
+            display: flex;
+
+      }
+
+      #hero img{
+            display: block;
+            height: 323px;
+            border-radius: 32px;
+            width: 100%;
+            max-width: 500px;
+            border-radius: 32px;
+            object-fit: cover;
+      }
+
+      footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+      }
+}
 
 
 
