@@ -125,6 +125,8 @@ article {
 article img{
       border-radius: 24px;
       width: 100%;
+      height: 10em;
+      /* object-fit: cover; */
 }
 
 article h3{
